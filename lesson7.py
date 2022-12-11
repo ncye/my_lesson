@@ -6,7 +6,7 @@ import numpy as np
 
 
 # Функция создания матрицы
-def matrix(row, col) -> np.ndarray:
+def creating_matrix(row, col) -> np.ndarray:
     matrix: np.ndarray = np.zeros((row, col))
     for i in range(row):
         for j in range(col):
@@ -15,12 +15,14 @@ def matrix(row, col) -> np.ndarray:
 
 
 # Функция поиска максимального значения в столбце
-def max_col(matrix, n):
-    max_col = 0
-    for i in range(n):
-        if matrix[i, 0] > max_col:
-            max_col = matrix[i, 0]
-    return max_col
+def maximum_column_value(matrix, row, col):
+    max = np.zeros(col)
+    for j in range(col):
+        max[j] = matrix[0, j]
+        for i in range(row):
+            if matrix[i, j] > max[j]:
+                max[j] = matrix[i, j]
+    return max
 
 
 # Функция вывода результата
@@ -32,9 +34,10 @@ def resout(max1):
 
 if __name__ == '__main__':
     # Создание матриц
-    n = 2
-    m = 3
-    A = matrix(n, m)
+    row = 2
+    col = 3
+    A = creating_matrix(row, col)
+    print(A)
     # n = 5
     # m = 7
     # B = matrix(n, m)
@@ -43,10 +46,9 @@ if __name__ == '__main__':
     # C = matrix(n, m)
 
     # Поиск максимальных значений
-    max1 = max_col(A, n)
+    max1 = maximum_column_value(A, row, col)
     # max2 = max_col(B, n)
     # max3 = max_col(C, n)
 
     # Вывод результата
     resout(max1)
-
