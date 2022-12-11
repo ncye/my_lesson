@@ -5,12 +5,9 @@
 import numpy as np
 
 
-# Функция создания матрицы
+# Функция создания матрицы с случайными числами
 def creating_matrix(row, column) -> np.ndarray:
-    matrix: np.ndarray = np.zeros((row, column))
-    for i in range(row):
-        for j in range(column):
-            matrix[i, j] = float(input('Введите элемент матрицы: '))
+    matrix = np.random.randint(-100, 100, (row, column), dtype=np.int32)
     return matrix
 
 
@@ -34,21 +31,21 @@ def resout(maximum_column_value_1, maximum_column_value_2, maximum_column_value_
 
 if __name__ == '__main__':
     # Создание матриц
-    n = 2
-    m = 3
+    n = 5
+    m = 4
     A = creating_matrix(n, m)
+    max1 = maximum_column_value(A, n, m)
     print(A)
     n = 5
     m = 7
     B = creating_matrix(n, m)
+    max2 = maximum_column_value(B, n, m)
+    print(B)
     n = 3
     m = 4
     C = creating_matrix(n, m)
-
-    # Поиск максимальных значений
-    max1 = maximum_column_value(A, n, m)
-    max2 = maximum_column_value(B, n, m)
     max3 = maximum_column_value(C, n, m)
+    print(C)
 
     # Вывод результата
     resout(max1, max2, max3)
