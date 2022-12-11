@@ -8,6 +8,7 @@ import numpy as np
 # Функция создания матрицы с случайными числами
 def creating_matrix(row, column):
     matrix = np.random.randint(-100, 100, (row, column), dtype=np.int32)
+    a = 1
     return matrix
 
     # matrix = np.zeros((row, column))
@@ -55,3 +56,4 @@ if __name__ == '__main__':
 
     # Вывод результата
     resout(max1, max2, max3)
+
