@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5c75a74-7a6a-43fd-aada-0686f2ccdba5" name="Changes" comment="add file">
-      <change beforePath="$PROJECT_DIR$/lesson7.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson7.py" afterDir="false" />
+    <list default="true" id="f5c75a74-7a6a-43fd-aada-0686f2ccdba5" name="Changes" comment="11.12.22">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +157,28 @@
       <option name="project" value="LOCAL" />
       <updated>1670771001948</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="11.12.22">
+      <created>1670771470777</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670771470777</updated>
+    </task>
+    <task id="LOCAL-00014" summary="11.12.22">
+      <created>1670771477008</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670771477008</updated>
+    </task>
+    <task id="LOCAL-00015" summary="11.12.22">
+      <created>1670771501907</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670771501907</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +194,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add file" />
+    <MESSAGE value="11.12.22" />
+    <option name="LAST_COMMIT_MESSAGE" value="11.12.22" />
   </component>
 </project>

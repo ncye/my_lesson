@@ -6,9 +6,15 @@ import numpy as np
 
 
 # Функция создания матрицы с случайными числами
-def creating_matrix(row, column) -> np.ndarray:
+def creating_matrix(row, column):
     matrix = np.random.randint(-100, 100, (row, column), dtype=np.int32)
     return matrix
+
+    # matrix = np.zeros((row, column))
+    # for i in range(row):
+    #     for j in range(column):
+    #         matrix[i, j] = int(input('Введите элемент матрицы: '))
+    # return matrix
 
 
 # Функция поиска максимального значения в столбце
