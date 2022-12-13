@@ -17,57 +17,39 @@ class CreatingMatrix:
 
 
 # Класс поиска максимального значения в столбце
-class MaximumColumnValue:
-    def __init__(self, matrix, row, column):
-        self.matrix = matrix
-        self.row = row
-        self.column = column
+class MaximumColumnValue(CreatingMatrix):
+    def __init__(self, row, column):
+        super().__init__(row, column)
 
-    def maximum_column_value(self):
+    def maximum_column_value(self, matrix):
         matrix_max = np.zeros(self.column)
         for j in range(self.column):
-            matrix_max[j] = self.matrix[0, j]
+            matrix_max[j] = matrix[0, j]
             for i in range(self.row):
-                if self.matrix[i, j] > matrix_max[j]:
-                    matrix_max[j] = self.matrix[i, j]
+                if matrix[i, j] > matrix_max[j]:
+                    matrix_max[j] = matrix[i, j]
         return matrix_max
 
 
-# Класс вывода матрицы
-class PrintMatrix:
-    def __init__(self, matrix):
-        self.matrix = matrix
+# Класс вывода результата
+class Resout(MaximumColumnValue):
+    def __init__(self, row, column):
+        super().__init__(row, column)
 
-    def print_matrix(self):
-        print(self.matrix)
-
-
-# Класс вывода максимальных значений столбцов
-class PrintMaximumColumnValue:
-    def __init__(self, matrix_max):
-        self.matrix_max = matrix_max
-
-    def print_maximum_column_value(self):
-        print(self.matrix_max)
-
-
-# Класс вывода максимальных значений столбцов для каждой матрицы
-class PrintMaximumColumnValueMatrix:
-    def __init__(self, matrix_max):
-        self.matrix_max = matrix_max
-
-    def print_maximum_column_value_matrix(self):
-        print('Максимальные значения столбцов матрицы A: ', self.matrix_max[0])
-        print('Максимальные значения столбцов матрицы B: ', self.matrix_max[1])
-        print('Максимальные значения столбцов матрицы C: ', self.matrix_max[2])
+    def resout(self, maximum_column_value_1, maximum_column_value_2, maximum_column_value_3):
+        print('Максимальные значения для каждого столбца матрицы A: ', maximum_column_value_1)
+        print('Максимальные значения для каждого столбца матрицы B: ', maximum_column_value_2)
+        print('Максимальные значения для каждого столбца матрицы C: ', maximum_column_value_3)
 
 
 if __name__ == '__main__':
-    matrix_max = []
-    matrix = CreatingMatrix(4, 5)
-    matrix_max.append(MaximumColumnValue(matrix.creating_matrix(), 4, 5).maximum_column_value())
-    matrix = CreatingMatrix(5, 7)
-    matrix_max.append(MaximumColumnValue(matrix.creating_matrix(), 5, 7).maximum_column_value())
-    matrix = CreatingMatrix(3, 4)
-    matrix_max.append(MaximumColumnValue(matrix.creating_matrix(), 3, 4).maximum_column_value())
-    PrintMaximumColumnValueMatrix(matrix_max).print_maximum_column_value_matrix()
+    matrix_A = CreatingMatrix(4, 5).creating_matrix()
+    maximum_column_value_A = MaximumColumnValue(4, 5).maximum_column_value(matrix_A)
+
+    matrix_B = CreatingMatrix(5, 7).creating_matrix()
+    maximum_column_value_B = MaximumColumnValue(5, 7).maximum_column_value(matrix_B)
+
+    matrix_C = CreatingMatrix(3, 4).creating_matrix()
+    maximum_column_value_C = MaximumColumnValue(3, 4).maximum_column_value(matrix_C)
+
+    Resout(3, 4).resout(maximum_column_value_A, maximum_column_value_B, maximum_column_value_C)

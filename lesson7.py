@@ -38,8 +38,8 @@ def resout(maximum_column_value_1, maximum_column_value_2, maximum_column_value_
 
 if __name__ == '__main__':
     # Создание матриц
-    n = 5
-    m = 4
+    n = 4
+    m = 5
     A = creating_matrix(n, m)
     max1 = maximum_column_value(A, n, m)
     print(A)
