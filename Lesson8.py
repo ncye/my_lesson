@@ -32,14 +32,10 @@ class MaximumColumnValue(CreatingMatrix):
 
 
 # Класс вывода результата
-class Resout(MaximumColumnValue):
-    def __init__(self, row, column):
-        super().__init__(row, column)
-
-    def resout(self, maximum_column_value_1, maximum_column_value_2, maximum_column_value_3):
-        print('Максимальные значения для каждого столбца матрицы A: ', maximum_column_value_1)
-        print('Максимальные значения для каждого столбца матрицы B: ', maximum_column_value_2)
-        print('Максимальные значения для каждого столбца матрицы C: ', maximum_column_value_3)
+def resout(maximum_column_value_1, maximum_column_value_2, maximum_column_value_3):
+    print('Максимальные значения для каждого столбца матрицы A: ', maximum_column_value_1)
+    print('Максимальные значения для каждого столбца матрицы B: ', maximum_column_value_2)
+    print('Максимальные значения для каждого столбца матрицы C: ', maximum_column_value_3)
 
 
 if __name__ == '__main__':
@@ -52,4 +48,4 @@ if __name__ == '__main__':
     matrix_C = CreatingMatrix(3, 4).creating_matrix()
     maximum_column_value_C = MaximumColumnValue(3, 4).maximum_column_value(matrix_C)
 
-    Resout(3, 4).resout(maximum_column_value_A, maximum_column_value_B, maximum_column_value_C)
+    resout(maximum_column_value_A, maximum_column_value_B, maximum_column_value_C)
