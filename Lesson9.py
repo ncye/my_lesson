@@ -33,8 +33,6 @@ class MaximumColumnValue(CreatingMatrix):
 
 
 # GUI интерфейс с выводом результата
-
-
 def resout(col_1, col_2, col_3):
     root = Tk()
     root.title('Результат')
