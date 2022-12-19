@@ -41,17 +41,14 @@ if __name__ == '__main__':
     m = 5
     A = creating_matrix(n, m)
     max1 = maximum_column_value(A, n, m)
-    print(A)
     n = 5
     m = 7
     B = creating_matrix(n, m)
     max2 = maximum_column_value(B, n, m)
-    print(B)
     n = 3
     m = 4
     C = creating_matrix(n, m)
     max3 = maximum_column_value(C, n, m)
-    print(C)
 
     # Вывод результата
     resout(max1, max2, max3)
