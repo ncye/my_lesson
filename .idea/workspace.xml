@@ -40,7 +40,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.Lesson9">
+  <component name="RunManager" selected="Python.lesson7">
     <configuration name="Check" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="my_lesson" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -127,9 +127,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.lesson7" />
         <item itemvalue="Python.Lesson9" />
         <item itemvalue="Python.Lesson8" />
-        <item itemvalue="Python.lesson7" />
         <item itemvalue="Python.Check" />
       </list>
     </recent_temporary>
@@ -332,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670965373484</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="11.12.22">
+      <created>1671481808039</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1671481808039</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

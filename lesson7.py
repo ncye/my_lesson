@@ -29,10 +29,10 @@ def maximum_column_value(matrix, row, column):
 
 
 # Функция вывода результата
-def resout(maximum_column_value_1, maximum_column_value_2, maximum_column_value_3):
-    print('Максимальные значения для каждого столбца матрицы A: ', maximum_column_value_1)
-    print('Максимальные значения для каждого столбца матрицы B: ', maximum_column_value_2)
-    print('Максимальные значения для каждого столбца матрицы C: ', maximum_column_value_3)
+def resout(m1, m2, m3):
+    print('Максимальные значения для каждого столбца матрицы A: ', m1)
+    print('Максимальные значения для каждого столбца матрицы B: ', m2)
+    print('Максимальные значения для каждого столбца матрицы C: ', m3)
 
 
 if __name__ == '__main__':
